@@ -53,7 +53,7 @@ set (unrar_SOURCES
 #set(LOCAL_LDLAGS "${LOCAL_LDLAGS} -pie -fPIE")
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DRARDLL -DLITTLE_ENDIAN -DRAR_SMP -fPIC -fexceptions -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -UALLOW_EXCEPTIONS ")
-add_library(libunrar ${unrar_SOURCES})
+add_library(unrar ${unrar_SOURCES})
 
 set(CMAKE_CXX_STANDARD 11)
-target_link_libraries(libunrar)
+target_link_libraries(unrar)
